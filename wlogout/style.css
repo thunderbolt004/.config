@@ -1,0 +1,41 @@
+window {
+	/*background-color: rgba(12, 12, 12, 0.9);*/
+	background-image: image(url("dracula-spooky-44475a.png"));
+}
+button {
+	color: #FFFFFF;
+	border-style: none;
+	outline-style: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+
+button:active, button:hover {
+	/*background-color: #8300C4;*/
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("icons/lock.svg"), url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("icons/logout.svg"), url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("icons/sleep.svg"), url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("icons/hibernate.svg"), url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.svg"), url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.svg"), url("/usr/share/wlogout/icons/reboot.png"));
+}

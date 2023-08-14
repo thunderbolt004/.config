@@ -40,7 +40,7 @@ cmp.setup {
     end, { 'i', 's' }),
   },
   sources = {
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' },
+    { name = 'luasnip', priority = 20 },
+    { name = 'nvim_lsp', priority = 10 },
   },
 }

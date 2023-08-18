@@ -70,8 +70,8 @@
         "tooltip": false,
         "format-muted": "",
         "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5",
+        "on-scroll-up": "pamixer --allow-boost -i 5",
+        "on-scroll-down": "pamixer --allow-boost -d 5",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",

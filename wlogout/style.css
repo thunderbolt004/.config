@@ -1,6 +1,5 @@
 window {
-	/*background-color: rgba(12, 12, 12, 0.9);*/
-	background-image: image(url("dracula-spooky-44475a.png"));
+	background: transparent;
 }
 button {
 	color: #FFFFFF;
@@ -12,7 +11,6 @@ button {
 }
 
 button:active, button:hover {
-	/*background-color: #8300C4;*/
 	outline-style: none;
 }
 

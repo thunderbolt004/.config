@@ -1,0 +1,12 @@
+{
+    "scraping_base": {
+        "prefix": "base",
+        "body": [
+            "from urllib.request import urlopen",
+            "from bs4 import BeautifulSoup\n",
+            "html = urlopen('http://www.pythonscraping.com/pages/page$0.html')",
+            "bs = BeautifulSoup(html, 'html.parser')"
+        ],
+        "description": "Adds shebang line for default python interpreter."
+    }
+}

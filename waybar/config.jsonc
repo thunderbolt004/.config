@@ -6,32 +6,31 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 45,
-    //"modules-left": ["clock","wlr/workspaces"],
-    "modules-left": ["clock"],
+    "modules-left": ["clock","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["network","bluetooth","temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray"],
     "hyprland/window": {
         "format": "{}"
     },
 
-    // "wlr/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "on-click": "activate",
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": " ",
-    //         "2": " ",
-    //         "3": " ",
-    //         "4": " ",
-    //         "5": " ",
-    //         "6": " ",
-    //         "7": " ",
-    //         "urgent": " ",
-    //         "focused": " ",
-    //         "default": " "
-    //     }
-    // },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{name}:{icon}",
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "6": " ",
+            "7": " ",
+            "urgent": " ",
+            "focused": " ",
+            "default": " "
+        }
+    },
     
     "tray": {
         "icon-size": 18,

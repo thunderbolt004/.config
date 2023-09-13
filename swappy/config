@@ -1,4 +1,4 @@
 [Default]
-save_dir=$HOME/Pictures/swappy
+save_dir=$HOME/Pictures/ss
 save_filename_format=swappy-%m%d-%H%M%S.png
 early_exit=true

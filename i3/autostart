@@ -1,0 +1,14 @@
+# start i3
+exec --no-startup-id dex --autostart --environment i3
+# use i3lock to lock the screen before suspend
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# applications
+exec --no-startup-id nm-applet
+exec --no-startup-id polybar
+exec --no-startup-id redshift
+exec --no-startup-id picom
+
+# scripts
+exec --no-startup-id $HOME/.fehbg
+exec --no-startup-id $HOME/.xinputrc

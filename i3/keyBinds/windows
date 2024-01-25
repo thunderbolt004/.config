@@ -1,0 +1,44 @@
+bindsym $mod+x kill
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+################
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+################
+
+# layout
+bindsym $mod+Shift+b split toggle
+bindsym $mod+f fullscreen toggle
+bindsym $mod+d layout toggle split
+################
+
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+b focus mode_toggle
+bindsym $mod+a focus parent
+floating_modifier $mod
+
+bindsym $mod+p sticky toggle
+bindsym $mod+Shift+r reload
+
+# resize mode
+bindsym $mod+r mode "resize"
+mode "resize" {
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+################

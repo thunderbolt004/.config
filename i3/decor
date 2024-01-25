@@ -1,0 +1,8 @@
+font pango:JetBrains Mono Nerd Font 12
+
+for_window [class="Nemo"] floating enable, resize set 800 600, move position center
+for_window [class="guvcview"] floating enable, sticky enable, resize set 400 300, move position mouse
+
+default_border pixel 2
+gaps inner 6
+gaps outer 0

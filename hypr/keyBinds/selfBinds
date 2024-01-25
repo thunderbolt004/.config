@@ -1,0 +1,51 @@
+$mod1 = SUPER
+
+# hyprland
+bind = $mod1, X, killactive
+bind = $mod1, V, togglefloating
+bind = $mod1, D, togglesplit, # dwindle
+
+# applications
+bind = $mod1, SPACE, exec, kitty
+bind = $mod1 SHIFT, L, exec, wlogout
+bind = $mod1, N, exec, nemo
+bind = $mod1, F, exec, firefox
+bind = CTRL, SPACE, exec, rofi -show drun
+
+# scripts
+# bind = $mod1, C, exec, wp
+# bind = $mod1 SHIFT, C, exec, wp p
+bind = $mod1 SHIFT, Z, exec, hyprctl dispatch exit
+bind = $mod1, M, exec, media
+bind = $mod1, Z, exec, powermenu
+
+# capture
+bind = $mod1, S, exec, grim -g "$(slurp)" - | swappy -f -
+bind = , print, exec, grim -o eDP-1 "$HOME/Pictures/ss/$(date +'ss-%m%d_%H%M%S.png')"
+
+# temporary
+bind = $mod1, Y, exec, mpv ~/Downloads/Videos/Docker\,\ From\ Zero\ To\ Hero\ Become\ a\ DevOps\ Docker\ Master/ &
+bind = $mod1, A, exec, mpv ~/gaane/Neural\ Networks\:\ Zero\ to\ Hero/ &
+
+# playerctl
+bind = $mod1, W, exec, playerctl play-pause
+bind = $mod1 SHIFT, W, exec, playerctl stop
+bind = $mod1, Q, exec, playerctl previous
+bind = $mod1, E, exec, playerctl next
+binde = $mod1 SHIFT, Q, exec, playerctl position 10-
+binde = $mod1 SHIFT, E, exec, playerctl position 10+
+
+# scroll through existing workspaces with mod1 + scroll
+bind = ALT, L, workspace, e+1
+bind = ALT, H, workspace, e-1
+
+# Move/resize windows
+bindm = $mod1, mouse:272, movewindow
+bindm = $mod1, mouse:273, resizewindow
+
+# fn keys
+binde = , XF86MonBrightnessUp, exec, brightnessctl s +5%
+binde = , XF86MonBrightnessDown, exec, brightnessctl s 5%-
+binde = , XF86AudioRaiseVolume, exec, pamixer -u -i 10
+binde = , XF86AudioLowerVolume, exec, pamixer -d 10
+bindr = , XF86AudioMute, exec, pamixer -t

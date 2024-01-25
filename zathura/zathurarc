@@ -1,0 +1,15 @@
+set sandbox none
+set page-padding 0
+set guioptions none
+set selection-clipboard clipboard
+map = zoom in
+map - zoom out
+map i recolor
+map p print
+map g goto top
+map D set "first-page-column 1:1"
+map [fullscreen] = zoom in
+map [fullscreen] - zoom out
+map [fullscreen] i zoom out
+map [fullscreen] g goto top
+map [fullscreen] D set "first-page-column 1:1"

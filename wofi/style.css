@@ -1,0 +1,38 @@
+* {
+    font-family: Font Awesome;
+}
+
+window {
+    border-radius: 10px;
+    background-color: rgba(0.1, 0.1, 0.2, 0.8);
+}
+
+#input {
+    border: none;
+    color: #CDD6F4;
+    background: ;
+    padding: 4px;
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+#inner-box {
+    margin: 5px;
+    color: #cdd6f4;
+    border-radius: 15px;
+}
+
+#text:selected {
+    color: #CDD6F4;
+}
+
+#entry {
+    margin: 5px;
+    padding: 6px;
+    background-color: transparent;
+}
+
+#entry:selected {
+    border: solid;
+    border-width: 0 0 0 1px;
+}

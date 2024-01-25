@@ -1,0 +1,50 @@
+# applications
+bindsym $mod+space exec kitty
+bindsym Control+space exec "rofi -show drun"
+bindsym $mod+o exec Obsidian-1.4.16.AppImage
+################
+
+# scripts
+bindsym $mod+m          exec "media"
+bindsym $mod+z          exec "powermenu"
+bindsym $mod+c          exec "containers"
+bindsym $mod+Shift+c    exec "containers kill"
+bindsym $mod+Shift+z    exec "utils"
+################
+
+# capture
+bindsym $mod+s exec "maim -s -u $HOME/Pictures/ss/$(date +'ss-%m%d_%H%M%S.png')"
+# image to text, self computer
+# bindsym $mod+Shift+s exec "maim -s -u | tesseract - - | xclip -selection clipboard"
+# send question image after selection, during OA
+bindsym $mod+Shift+s exec "maim -s -u | xclip -selection clipboard -t image/png -i"
+# send question in text, during OA
+# bindsym $mod+Shift+s exec "maim -s -u | tesseract - - | sshpass -p 6262 ssh batth@192.168.1.87 'DISPLAY=:0 xclip -selection clipboard'"
+# send clipboard to batth, to share code during viva
+bindsym $mod+Shift+u exec "sshpass -p 6262 ssh batth@192.168.1.87 'DISPLAY=:0 xclip -selection clipboard'"
+# send full screenshot to batth, during screen share
+# bindsym Print exec "maim -u | sshpass -p 6262 ssh batth@192.168.1.87 'DISPLAY=:0 xclip -selection clipboard -t image/png'"
+# save full screenshot to disk
+bindsym Print exec "maim -u $HOME/Pictures/ss/$(date +'ss-%m%d_%H%M%S.png')"
+################
+
+# temporary
+bindsym $mod+Shift+p exec "mpv $HOME/rust-os/lecs"
+################
+
+# playerctl
+bindsym $mod+w exec playerctl play-pause
+bindsym $mod+Shift+w exec playerctl stop
+bindsym $mod+q exec playerctl previous
+bindsym $mod+e exec playerctl next
+bindsym $mod+Shift+q exec playerctl position 10-
+bindsym $mod+Shift+e exec playerctl position 10+
+################
+
+# fn keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 10
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 10
+bindsym XF86AudioMute exec --no-startup-id pamixer -t
+bindsym XF86MonBrightnessUp, exec --no-startup-id brightnessctl s +5%
+bindsym XF86MonBrightnessDown, exec --no-startup-id brightnessctl s 5%-
+################

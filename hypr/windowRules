@@ -1,0 +1,12 @@
+windowrule = float, ^(pavucontrol)$
+windowrule = float, ^(gnome-system-monitor)$
+windowrule = float, ^(xpad)$
+windowrulev2 = move 80% 5%,class:^(xpad)$
+windowrulev2 = size 40% 40%,class:^(gnome-system-monitor)$
+
+# transparency rules
+windowrulev2 = opacity 0.8 0.8,class:^(kitty)$
+windowrulev2 = opacity 0.8 0.8,class:^(nemo)$
+windowrulev2 = opacity 0.8 0.8,class:^(xpad)$
+windowrulev2 = opacity 0.8 0.8,class:^(wofi)$
+windowrulev2 = opacity 0.8 0.8,class:^(pavucontrol)$

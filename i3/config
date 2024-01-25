@@ -1,0 +1,5 @@
+set $mod Mod4
+
+include ./autostart
+include ./keyBinds/*
+include ./decor

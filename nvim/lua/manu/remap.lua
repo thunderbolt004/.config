@@ -26,6 +26,7 @@ set('n', '<S-h>', '<C-w><')
 set('n', '<S-l>', '<C-w>>')
 -- new window
 set('n', '<C-n>', ':rightb vert new ')
+set('t', '<C-q>', '<C-\\><C-n>')
 set('n', '<CR>', ':bel new ')
 -- set('n', '<CR>', ':bel new <CR>', { silent = true })
 

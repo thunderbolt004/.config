@@ -8,8 +8,10 @@ map i recolor
 map p print
 map g goto top
 map D set "first-page-column 1:1"
+map U set "first-page-column 1:2"
 map [fullscreen] = zoom in
 map [fullscreen] - zoom out
 map [fullscreen] i zoom out
 map [fullscreen] g goto top
 map [fullscreen] D set "first-page-column 1:1"
+map [fullscreen] U set "first-page-column 1:2"

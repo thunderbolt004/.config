@@ -129,5 +129,6 @@ return {
   'tpope/vim-sleuth',
   'tpope/vim-surround',
   'norcalli/nvim-colorizer.lua', -- color hex codes
+  'xiyaowong/transparent.nvim',
 
 }

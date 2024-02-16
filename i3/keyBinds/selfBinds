@@ -5,11 +5,14 @@ bindsym $mod+o exec Obsidian-1.4.16.AppImage
 ################
 
 # scripts
-bindsym $mod+m          exec "media"
-bindsym $mod+z          exec "powermenu"
-bindsym $mod+c          exec "containers"
-bindsym $mod+Shift+c    exec "containers kill"
-bindsym $mod+Shift+z    exec "utils"
+bindsym $mod+m                exec "media"
+bindsym $mod+z                exec "powermenu"
+bindsym $mod+c                exec "containers"
+bindsym $mod+Shift+c          exec "containers kill"
+bindsym $mod+Control+k        exec "screenkey --opacity 0.0 --font-color '#00ff00' --font-size small --no-whitespace"
+# bindsym $mod+Shift+z        exec "utils"
+bindsym $mod+Control+c        exec "wkhtmltopdf $(xclip -o) - | zathura - "
+bindsym $mod+Control+space    exec "games"
 ################
 
 # capture

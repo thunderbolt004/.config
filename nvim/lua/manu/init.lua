@@ -10,15 +10,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
-
--- Setup neovim lua configuration
--- require('neodev').setup()
--- color hex codes
--- require('colorizer').setup()
-
 -- change tabs to spaces in python
 vim.cmd([[autocmd FileType python setlocal expandtab]])
 
+-- stop forgetting folds
 vim.api.nvim_exec([[
 augroup remember_folds
   autocmd!

@@ -1,0 +1,4 @@
+bind -f common . player-next
+bind -f common , player-prev
+bind -f common ^H seek -1m
+bind -f common ^L seek +1m
